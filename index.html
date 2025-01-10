@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Feelings</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif;
+            color: #4a154b;
+            background: #f2e4dc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            /* overflow: hidden; */
+        }
+
+        .container {
+            margin: 40px;
+            width: 90%;
+            max-width: 800px;
+            background: #fff8f2;
+            border: 1px solid #d4b5a6;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            padding: 40px;
+            position: relative;
+            /* overflow: hidden; */
+        }
+
+        .container:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://www.transparenttextures.com/patterns/linen.png');
+            opacity: 0.3;
+            z-index: 0;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            color: #711c91;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .letter {
+            line-height: 1.8;
+            font-size: 1.2rem;
+            text-indent: 2em;
+            margin-bottom: 20px;
+        }
+
+        .letter p {
+            margin-bottom: 1em;
+            white-space: pre-wrap;
+        }
+
+        .signature {
+            margin-top: 20px;
+            text-align: right;
+            font-style: italic;
+            color: #5d3456;
+        }
+
+        .wax-seal {
+            position: absolute;
+            bottom: -20px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #a10035;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: 'Times New Roman', serif;
+            font-size: 1.5rem;
+            transform: rotate(-10deg);
+        }
+
+        .wax-seal::before {
+            content: "❤️";
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="header">
+                <h1>My Love Letter</h1>
+            </div>
+            <div class="letter">
+                <p>My dearest love,</p>
+                <p>
+                    Every moment I spend with you is a treasure beyond compare. Your smile lights up my world, and your laughter fills my heart with joy. I still remember the first time we met, and how my heart knew instantly that you were the one for me. From the way you care so deeply to the warmth of your touch, you have brought a love into my life that I never thought possible.
+                </p>
+                <p>
+                    As I write this letter, I think about all the moments we've shared and the memories we've created together. Each one is a testament to the bond we share. I am endlessly grateful for you, and I promise to cherish and love you every day of my life.
+                </p>
+                <p class="signature">Forever yours,<br> [Your Name]</p>
+            </div>
+        </div>
+        <div class="wax-seal"></div>
+    </div>
+</body>
+</html>
